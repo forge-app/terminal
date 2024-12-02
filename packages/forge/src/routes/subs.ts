@@ -56,7 +56,6 @@ export const Subs = new Page({
                 .from(subscriptionTable)
                 .innerJoin(
                   userTable,
-                  isNotNull,
                   eq(subscriptionTable.userID, userTable.id),
                 )
                 .innerJoin(
